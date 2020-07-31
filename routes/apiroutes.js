@@ -13,12 +13,12 @@ module.exports = function (app) {
 
     // GET API ====================================
     // setting up for /api/notes get route
-    app.get("api/notes", function (req, res) {
-      res.JSON(note);
+    app.get("/api/notes", function (req, res) {
+      res.json(note);
     });
     // POST API ====================================
     // setting up for /api/notes post route
-
+    app.post("api/notes", function (req, res) {});
     // DELETE API ==================================
     // setting up for /api/notes/:id
   });
